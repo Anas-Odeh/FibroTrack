@@ -6,9 +6,9 @@
 FibroTrack is an innovative deep learning platform developed to automate the quantification of fibrosis in histological images of cardiac and skeletal muscle tissues. By leveraging advanced color space manipulation and state-of-the-art segmentation models, FibroTrack enables precise, reproducible, and high-throughput fibrosis analysis.
 
 ## Key Features ##
-Utilizes the LAB color space to accurately isolate fibrotic regions highlighted by Sirius Red and Masson's Trichrome stains.
+- Utilizes the LAB color space to accurately isolate fibrotic regions highlighted by Sirius Red and Masson's Trichrome stains.
 
-Incorporates the YOLOv11 deep learning model trained on a large, diverse dataset to reliably segment muscle tissues.
+* Incorporates the YOLOv11 deep learning model trained on a large, diverse dataset to reliably segment muscle tissues.
 
 Provides robust fibrosis ratio measurements to assess disease progression or treatment response in an objective, unbiased manner.
 
