@@ -1,5 +1,3 @@
-
-
 # FibroTrack
 ## FibroTrack: A Standalone Deep Learning Platform for Accurate Fibrosis Quantification in Skeletal and Cardiac Muscle Tissues ##
 
@@ -14,7 +12,9 @@ FibroTrack is an innovative deep learning platform developed to automate the qua
 
 * Validated across staining protocols and tissue types to ensure consistent, generalizable performance.
 
-* Offers a user-friendly interface and organized output for easy integration into research workflows.
+* Offers a user-friendly interface and organized output for easy integration into research workflows in 3 distinct steps: 
+## Step 1: Define Your Pixels 
+
 
 ## Applications ##
 FibroTrack has wide-ranging applications in preclinical and clinical studies where fibrosis quantification is essential, such as:
