@@ -22,7 +22,8 @@ FibroTrack is an innovative deep learning platform developed to automate the qua
 
 
 ## Step 3: Analyze Fibrosis
-![Odeh et al  Analyze Fibrosis](https://github.com/user-attachments/assets/00485b51-1465-4634-8439-f52ce3b12b84)
+<img width="536" alt="image" src="https://github.com/user-attachments/assets/392ffb3b-c284-4c5b-bede-f47acef1aa3f">
+
 
 ## Applications ##
 FibroTrack has wide-ranging applications in preclinical and clinical studies where fibrosis quantification is essential, such as:
