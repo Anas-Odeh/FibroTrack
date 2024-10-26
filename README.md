@@ -43,7 +43,7 @@ Please see the documentation for system requirements and step-by-step instructio
 
 
 ## License ##
-FibroTrack is licensed under GPL-3.0. See LICENSE for more details.
+FibroTrack is licensed under MIT. See LICENSE for more details.
 
 
 
