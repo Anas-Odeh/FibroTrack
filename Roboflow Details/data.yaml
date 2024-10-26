@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['Tissue']
+
+roboflow:
+  workspace: skin-3us8e
+  project: fibrotrack
+  version: 11
+  license: Private
+  url: https://app.roboflow.com/skin-3us8e/fibrotrack/11
