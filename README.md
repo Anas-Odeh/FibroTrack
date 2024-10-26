@@ -14,11 +14,6 @@ FibroTrack is an innovative deep learning platform developed to automate the qua
 
 * Offers a user-friendly interface and organized output for easy integration into research workflows in 3 distinct steps: 
 
-| Step | Description         
-|-----:|---------------------|                                                                                                                     
-|     1| Define Your Pixels  | 
-|     2| Muscle Segmentation | 
-|     3| Analyze Fibrosis    | 
 
 ## Step 1: Define Your Pixels  
 <img width="539" alt="image" src="https://github.com/user-attachments/assets/62977251-d9bf-4201-8ae8-bb6ba4cafbcc">
