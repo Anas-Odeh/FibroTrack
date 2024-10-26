@@ -16,6 +16,11 @@ FibroTrack is an innovative deep learning platform developed to automate the qua
 ## Step 1: Define Your Pixels  
 ![Odeh et al  Define Pixel](https://github.com/user-attachments/assets/1dadbb85-a9d7-44c3-97f6-468add9be94e)
 
+## Step 2: Muscle Segmentation 
+![Odeh et al  Muscle Segmentation](https://github.com/user-attachments/assets/dd66a552-bda7-4d2c-a49f-4fb095978173)
+
+## Step 3: Analyze Fibrosis
+![Odeh et al  Analyze Fibrosis](https://github.com/user-attachments/assets/00485b51-1465-4634-8439-f52ce3b12b84)
 
 ## Applications ##
 FibroTrack has wide-ranging applications in preclinical and clinical studies where fibrosis quantification is essential, such as:
@@ -35,7 +40,9 @@ Please see the documentation for system requirements and step-by-step instructio
 ## License ##
 FibroTrack is licensed under GPL-3.0. See LICENSE for more details.
 
-![Odeh et al  Muscle Segmentation](https://github.com/user-attachments/assets/dd66a552-bda7-4d2c-a49f-4fb095978173)
+
+
+
 
 
 
