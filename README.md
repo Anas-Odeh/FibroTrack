@@ -13,7 +13,8 @@ FibroTrack is an innovative deep learning platform developed to automate the qua
 * Validated across staining protocols and tissue types to ensure consistent, generalizable performance.
 
 * Offers a user-friendly interface and organized output for easy integration into research workflows in 3 distinct steps: 
-## Step 1: Define Your Pixels 
+## Step 1: Define Your Pixels  
+![Odeh et al  Define Pixel](https://github.com/user-attachments/assets/1dadbb85-a9d7-44c3-97f6-468add9be94e)
 
 
 ## Applications ##
@@ -33,6 +34,9 @@ Please see the documentation for system requirements and step-by-step instructio
 
 ## License ##
 FibroTrack is licensed under GPL-3.0. See LICENSE for more details.
+
+![Odeh et al  Muscle Segmentation](https://github.com/user-attachments/assets/dd66a552-bda7-4d2c-a49f-4fb095978173)
+
 
 
 
