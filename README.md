@@ -33,7 +33,7 @@ Cardiac hypertrophy and heart failure models induced by pressure overload, to ev
 Clinical samples, to correlate fibrosis levels with patient outcomes, prognosis, or response to therapies.
 
 ## Installation ##
-See the installation guide for system requirements and step-by-step instructions to download and run FibroTrack on Windows.
+See the Guidelines for FibroTrack Installation and step-by-step instructions to download and run FibroTrack on Windows.
 
 
 ## Usage ##
