@@ -1,5 +1,7 @@
+import sys
 
-try:
+if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
+    try:
     import pyi_splash
     # Optionally update the splash screen text
     pyi_splash.update_text("Initializing FibroTrack...")
@@ -7,7 +9,6 @@ except ImportError:
     # pyi_splash is only available in the PyInstaller bundled executable
     pass
 
-import sys
 import itertools
 import threading
 from colorama import Fore, Style, init
@@ -41,15 +42,15 @@ def print_welcome_message():
 
 print_welcome_message()
 
-# Close the splash screen after initialization
-try:
+if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
+    try:
     pyi_splash.close()
 except ImportError:
     pass
 
-import sys
+
+
 import itertools
-import threading
 from tqdm import tqdm
 
 
