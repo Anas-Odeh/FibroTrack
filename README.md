@@ -34,6 +34,12 @@ Duchenne Muscular Dystrophy models, to assess progressive muscle tissue replacem
 Cardiac hypertrophy and heart failure models induced by pressure overload, to evaluate pathological cardiac remodeling.
 Clinical samples, to correlate fibrosis levels with patient outcomes, prognosis, or response to therapies.
 
+## System requirements ##
+* System: Windows 10/11 (64-bit) 
+* Space: 658.2 MB 
+* RAM: 8 GB minimum (16 GB recommended) 
+* CPU: Intel Core i3/i5 or better (Intel Core i7/Ryzen 7 recommended) 
+
 ## Installation ##
 See the Guidelines for FibroTrack Installation and step-by-step instructions to download and run FibroTrack on Windows.
 
