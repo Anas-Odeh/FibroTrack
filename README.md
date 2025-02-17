@@ -35,10 +35,10 @@ Cardiac hypertrophy and heart failure models induced by pressure overload, to ev
 Clinical samples, to correlate fibrosis levels with patient outcomes, prognosis, or response to therapies.
 
 ## System requirements ##
-* System: Windows 10/11 (64-bit) 
-* Space: 658.2 MB 
-* RAM: 8 GB minimum (16 GB recommended) 
-* CPU: Intel Core i3/i5 or better (Intel Core i7/Ryzen 7 recommended) 
+* Operating System: Windows 10/11 Pro 64-bit or Windows Server 2019 Standard.
+* Processor: 11th Gen Intel Core i7 or better (2.50GHz or higher).
+* RAM: 16 GB (8 GB minimum)
+* Storage: 658.2 MB available space.
 
 ## Installation ##
 See the Guidelines for FibroTrack Installation and step-by-step instructions to download and run FibroTrack on Windows.
