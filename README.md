@@ -1,55 +1,106 @@
 # FibroTrack
-## FibroTrack: A Standalone Deep Learning Platform for Automated Fibrosis Quantification in Muscle and Cardiac Histology ##
 
-FibroTrack is an innovative deep learning platform developed to automate the quantification of fibrosis in histological images of cardiac and skeletal muscle tissues. By leveraging advanced color space manipulation and state-of-the-art segmentation models, FibroTrack enables precise, reproducible, and high-throughput fibrosis analysis.
+**FibroTrack** is a standalone deep learning platform for **automated fibrosis quantification** in histological images of **skeletal and cardiac muscle tissues**.  
 
-## Key Features ##
-* Utilizes the LAB color space to accurately isolate fibrotic regions highlighted by Sirius Red, Immunohistochemistry and Masson's Trichrome stains.
+The tool uniquely combines **LAB color space normalization** with a **YOLOv11 segmentation model** trained on 2,034 annotated images. This integration enables robust and reproducible fibrosis analysis across **Sirius Red (SR)**, **Masson’s Trichrome (MT)**, and **immunohistochemistry (IHC)** stainings.  
 
-* Incorporates the YOLOv11 deep learning model trained on a large, diverse dataset to reliably segment muscle tissues.
+FibroTrack delivers **>97% precision**, demonstrates excellent concordance with blinded pathologists (Spearman r = 0.87–0.96), and produces structured outputs (segmented images + spreadsheets) in a fully automated workflow.  
 
-* Provides robust fibrosis ratio measurements to assess disease progression or treatment response in an objective, unbiased manner.
+---
 
-* Validated across staining protocols and tissue types to ensure consistent, generalizable performance.
+## ✨ Key Features
+- **LAB color space normalization**  
+  Superior separation of fibrotic tissue from artifacts compared to RGB/HSV. Robust across SR, MT, and IHC stains.  
 
-* Offers a user-friendly interface and organized output for easy integration into research workflows in 3 distinct steps: 
+- **YOLOv11 segmentation**  
+  Trained on a diverse dataset of 2,034 images with data augmentation (exposure, brightness, blur). Achieves mask precision of 97.5% and recall of 95.3%.  
 
+- **Objective fibrosis ratio measurement**  
+  Calculates the percentage of fibrotic tissue relative to the total muscle area with high reproducibility.  
 
-## Step 1: Define Your Pixels  
-<img width="539" alt="image" src="https://github.com/user-attachments/assets/62977251-d9bf-4201-8ae8-bb6ba4cafbcc">
+- **Cross‑validated performance**  
+  Agreement with blinded pathologists (r = 0.87–0.96) and no significant differences compared to manual scoring.  
 
+- **Standalone, user‑friendly GUI**  
+  Requires no programming skills or external software. Supports JPG, PNG, TIFF.  
 
-## Step 2: Muscle Segmentation 
-<img width="537" alt="image" src="https://github.com/user-attachments/assets/e423ea06-1c96-43f8-8231-c5af8d5377fc">
+- **Organized outputs**  
+  Automatically generates segmented images, binary masks, and structured CSV/Excel files in timestamped folders.  
 
+- **High throughput**  
+  Processes images in ~5 ms each, suitable for large‑scale studies.  
 
-## Step 3: Analyze Fibrosis
-<img width="536" alt="image" src="https://github.com/user-attachments/assets/392ffb3b-c284-4c5b-bede-f47acef1aa3f">
+---
 
+## 🚀 Workflow
 
-## Applications ##
-FibroTrack has wide-ranging applications in preclinical and clinical studies where fibrosis quantification is essential, such as:
+### Step 1: Define Your Pixels  
+Users define pixel intensity thresholds in **LAB color space**. Auto‑selection is provided, with optional manual refinement.  
 
-Duchenne Muscular Dystrophy models, to assess progressive muscle tissue replacement by fibrosis.
-Cardiac hypertrophy and heart failure models induced by pressure overload, to evaluate pathological cardiac remodeling.
-Clinical samples, to correlate fibrosis levels with patient outcomes, prognosis, or response to therapies.
+<img width="539" alt="Step 1: Define Pixels" src="https://github.com/user-attachments/assets/62977251-d9bf-4201-8ae8-bb6ba4cafbcc">
 
-## System requirements ##
-* Operating System: Windows 10/11 Pro 64-bit or Windows Server 2019 Standard.
-* Processor: 11th Gen Intel Core i7 or better (2.50GHz or higher).
-* RAM: 16 GB (8 GB minimum)
-* Storage: 658.2 MB available space.
+### Step 2: Muscle Segmentation  
+YOLOv11 performs whole‑tissue segmentation, robust to staining variability and imaging artifacts.  
 
-## Installation ##
-See the Guidelines for FibroTrack Installation and step-by-step instructions to download and run FibroTrack on Windows.
+<img width="537" alt="Step 2: Segmentation" src="https://github.com/user-attachments/assets/e423ea06-1c96-43f8-8231-c5af8d5377fc">
 
+### Step 3: Analyze Fibrosis  
+Fibrosis ratios are calculated automatically and exported in structured CSV files.  
 
-## Usage ##
-Please see the documentation for system requirements and step-by-step instructions to run FibroTrack. For any other questions, feel free to create an issue on GitHub.
+<img width="536" alt="Step 3: Analyze" src="https://github.com/user-attachments/assets/392ffb3b-c284-4c5b-bede-f47acef1aa3f">
 
+---
 
-## License ##
-FibroTrack is licensed under MIT. See LICENSE for more details.
+## 🧪 Applications
+FibroTrack can be applied in both **preclinical** and **clinical** contexts, including:  
+- **Duchenne Muscular Dystrophy (DMD)** – quantification of progressive muscle replacement by fibrosis.  
+- **Cardiac hypertrophy and heart failure** – evaluation of pathological remodeling.  
+- **Clinical biopsies** – correlation of fibrosis levels with prognosis, outcomes, or response to therapies.  
+
+---
+
+## 💻 System Requirements
+- **OS**: Windows 10/11 Pro 64‑bit or Windows Server 2019 Standard  
+- **Processor**: Intel Core i7 (11th Gen or newer, ≥2.5 GHz)  
+- **RAM**: 16 GB recommended (minimum 8 GB)  
+- **Storage**: ~700 MB available space  
+
+---
+
+## ⚙️ Installation
+1. Download the installation package: [FibroTrack Installer](https://drive.google.com/file/d/1PvTxR_7k43wXrBx1fXlQomSxXSApQrA2/view?usp=sharing)  
+2. Extract the folder `FibroTrack installation.zip`.  
+3. Run **Install FibroTrack Graphical User Interface.exe**.  
+4. The GUI will install and configure automatically.  
+
+---
+
+## 📖 Usage
+- For usage instructions, see the [Documentation](./docs/USAGE.md).  
+- Input supported: JPG, PNG, TIFF.  
+- Outputs include segmented images, binary masks, and fibrosis ratios in CSV/Excel format.  
+
+---
+
+## 📚 Data & Code Availability
+- **Raw images, dataset splits, and YOLOv11 configs**: [FibroTrack Dataset](https://github.com/Anas-Odeh/FibroTrack)  
+- **Source code (Python)**: `FibroTrackSourceCodeFinal.py` under [MIT License](./LICENSE).  
+
+---
+
+## 📜 License
+FibroTrack is released under the [MIT License](./LICENSE).  
+
+---
+
+## 📖 Citation
+If you use **FibroTrack**, please cite:  
+
+> Odeh A, Salem R, Abu Saleh M, Shemesh A, Stein P, Livneh I, Hasson P.  
+> *FibroTrack: A Standalone Deep Learning Platform for Automated Fibrosis Quantification in Muscle and Cardiac Histology.*  
+> **Artificial Intelligence in Medicine.** 2025.  
+
+---
 
 
 
