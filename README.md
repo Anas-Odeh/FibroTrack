@@ -74,6 +74,35 @@ FibroTrack was validated against blinded expert pathologists (n=31 samples), dem
 
 ---
 
+## 🛠 Troubleshooting
+
+If the analysis hangs (e.g., spinning for 30+ minutes) or the results folder remains empty, please verify the following:
+
+> [!IMPORTANT]
+> **Shorten your File Path**  
+> Long or complex folder paths are the most common cause of execution failure. If your images are buried in many sub-folders, the software may not be able to "reach" them.
+> * **❌ Avoid:** `C:\Users\Name\Documents\Lab_Research\2026\Project_Alpha\Data\Batch_01\Images`
+> * **✅ Recommended:** Move your folder directly to the **Desktop** (e.g., `C:\Users\Name\Desktop\Analysis`) and run it from there.
+
+> [!NOTE]
+> **Verify Image Formats**  
+> FibroTrack is optimized for **.jpg**, **.png**, and **.tiff** files. Ensure your extensions match exactly. If you are using a different format, please convert them before starting the analysis.
+
+> [!TIP]
+> **Permissions**  
+> If the software fails to save the final Excel/CSV data, try **Running as Administrator**. This ensures the program has full permission to create new folders and files on your drive.
+
+---
+
+### Still having trouble?
+If these steps don't solve the issue, please [open an issue](https://github.com/Anas-Odeh/FibroTrack/issues) and include:
+1. A **screenshot** of the GUI where the process hangs.
+2. The **specific image type** and resolution you are using.
+3. A copy of the **Full File Path** you are trying to use.
+
+
+
+
 ## 📚 Data & Code Availability
 - **Raw images, dataset splits, and YOLOv11 configs**: [FibroTrack Dataset](https://github.com/Anas-Odeh/FibroTrack)  
 - **Source code (Python)**: `FibroTrackSourceCodeFinal.py` under [MIT License](./LICENSE).  
