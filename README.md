@@ -1,6 +1,6 @@
 # FibroTrack
 
-**FibroTrack** is an open-source, standalone deep learning platform equipped with a graphical user interface (GUI) designed to automate and streamline the quantification of fibrosis in histological images of skeletal and cardiac muscle
+**FibroTrack** is an open-source, standalone deep learning platform equipped with a graphical user interface (GUI) designed to automate and streamline the quantification of fibrosis in histological images of skeletal and cardiac muscle.
 
 ---
 
@@ -12,7 +12,7 @@
   Integrates **LAB color space normalization** to standardize profiles across images, compensating for variations in staining intensity and microscope settings. 
 
 - **Multi-Stain Support**  
-  Optimized for **Sirius Red (SR)**, **Masson’s Trichrome (MT)**, and **Immunohistochemistry (IHC)** (e.g., Collagen I/III)
+  Optimized for **Sirius Red (SR)**, **Masson’s Trichrome (MT)**, and **Immunohistochemistry (IHC)** (e.g., Collagen I/III).
 
 - **Standalone Accessibility**  
   No programming skills, external toolboxes, or legacy software (like MATLAB) are required.   
@@ -22,6 +22,7 @@
   
 - **Organized outputs**  
   Automatically generates segmented images, binary masks, and structured CSV/Excel files in timestamped folders.  
+
 ---
 
 ## 🚀 Workflow
@@ -49,13 +50,11 @@ FibroTrack was validated against blinded expert pathologists (n=31 samples), dem
 - **Statistical Robustness**: No significant difference between automated and manual expert assessments (Kruskal-Wallis, p=0.96).
 - **High Specificity**: Effectively excludes artifacts and nuclei that often lead to inaccurate quantification in standard RGB or HSV analysis.
 
-
 ---
 
 ## 💻 System Requirements
 - **OS**: Windows 10/11 Pro 64-bit. 
 - **Hardware**: 11th Gen Intel Core i7 or better; 16 GB RAM recommended.
-
 
 ---
 
@@ -77,6 +76,10 @@ FibroTrack was validated against blinded expert pathologists (n=31 samples), dem
 ## 🛠 Troubleshooting
 
 If the analysis hangs (e.g., spinning for 30+ minutes) or the results folder remains empty, please verify the following:
+
+> [!WARNING]
+> **Maximum Image Size Limit**  
+> FibroTrack has a strict maximum image size limit of **89,478,485 pixels** (approximately 89.5 megapixels). If you attempt to process an image that exceeds this limit (such as massive stitched whole-slide images), **FibroTrack will crash and the program will automatically close** to prevent system memory overload. Please downsample extremely large images or crop them into smaller tiles before starting your analysis.
 
 > [!IMPORTANT]
 > **Shorten your File Path**  
@@ -100,8 +103,7 @@ If these steps don't solve the issue, please [open an issue](https://github.com/
 2. The **specific image type** and resolution you are using.
 3. A copy of the **Full File Path** you are trying to use.
 
-
-
+---
 
 ## 📚 Data & Code Availability
 - **Raw images, dataset splits, and YOLOv11 configs**: [FibroTrack Dataset](https://github.com/Anas-Odeh/FibroTrack)  
@@ -118,15 +120,3 @@ FibroTrack is released under the [MIT License](./LICENSE).
 If you use FibroTrack in your research, please cite our paper: 
 
 > Odeh, A., Salem, R., Saleh, M.A. et al. FibroTrack: a standalone deep learning platform for automated fibrosis quantification in muscle and cardiac histology. Skeletal Muscle 16, 13 (2026). https://doi.org/10.1186/s13395-026-00415-8
----
-
-
-
-
-
-
-
-
-
-
-
