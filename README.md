@@ -78,8 +78,47 @@ FibroTrack was validated against blinded expert pathologists (n=31 samples), dem
 If the analysis hangs (e.g., spinning for 30+ minutes) or the results folder remains empty, please verify the following:
 
 > [!WARNING]
-> **Maximum Image Size Limit**  
-> FibroTrack has a strict maximum image size limit of **89,478,485 pixels** (approximately 89.5 megapixels). If you attempt to process an image that exceeds this limit (such as massive stitched whole-slide images), **FibroTrack will crash and the program will automatically close** to prevent system memory overload. Please downsample extremely large images or crop them into smaller tiles before starting your analysis.
+> ## Large Image & Memory Warning
+>
+> FibroTrack may close unexpectedly when processing images with very large pixel dimensions. **The file size in MB is not a reliable indicator of memory usage**, because compressed images are expanded when opened and may require several additional full-resolution arrays during analysis.
+>
+> For example, an image measuring **7000 × 6000 pixels** contains approximately **42 million pixels (42 megapixels)**. Although the image file may be only **7.5–8 MB**, it can consume hundreds of megabytes—or more—of RAM and GPU memory during processing.
+>
+> If FibroTrack closes while analyzing a large image, downsample the image or divide it into smaller tiles before trying again.
+>
+> ### Resize an image to 50% using ImageJ or Fiji
+>
+> To reduce both the width and height by a factor of **0.5**:
+>
+> 1. Open the image in **ImageJ** or **Fiji**.
+> 2. From the menu, select **Image → Scale...**
+> 3. Enter:
+>    - **X Scale:** `0.5`
+>    - **Y Scale:** `0.5`
+> 4. Enable **Constrain Aspect Ratio** if available.
+> 5. Enable **Interpolate** for smoother resizing.
+> 6. Enable **Average When Downsizing** if available.
+> 7. Click **OK**.
+> 8. Save the resized image as a **new file** using **File → Save As**. Do not overwrite the original image unless you have a backup.
+>
+> ### Example
+>
+> | Original image | Scale factor | Resized image |
+> |---|---:|---:|
+> | 7000 × 6000 pixels | 0.5 | 3500 × 3000 pixels |
+>
+> Reducing both dimensions by half reduces the total pixel count from approximately **42 megapixels to 10.5 megapixels**. This is a **75% reduction in total pixels**, which can significantly reduce memory usage during analysis.
+>
+> ### Recommended precautions
+>
+> - Always keep a copy of the original full-resolution image.
+> - Check the image’s **pixel dimensions**, not only its file size in MB.
+> - Close other memory-intensive applications before running FibroTrack.
+> - Process fewer images at one time.
+> - If resizing to 50% is insufficient, use a smaller scale factor or divide the image into smaller tiles.
+> - Confirm that the resized image still provides enough resolution for reliable biological analysis.
+>
+> **Note:** FibroTrack does not currently enforce a universal fixed megapixel limit. The practical image-size limit depends on available system RAM, GPU memory, image format, bit depth, batch size, and the selected analysis workflow.
 
 > [!IMPORTANT]
 > **Shorten your File Path**  
