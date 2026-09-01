@@ -82,7 +82,7 @@ If the analysis hangs (e.g., spinning for 30+ minutes) or the results folder rem
 >
 > FibroTrack may close unexpectedly when processing images with very large pixel dimensions. **The file size in MB is not a reliable indicator of memory usage**, because compressed images are expanded when opened and may require several additional full-resolution arrays during analysis.
 >
-> For example, an image measuring **7000 × 6000 pixels** contains approximately **42 million pixels (42 megapixels)**. Although the image file may be only **7.5–8 MB**, it can consume hundreds of megabytes—or more—of RAM and GPU memory during processing.
+> For example, an image measuring **7000 × 6000 pixels** contains approximately **42 million pixels (42 megapixels)**. Although the image file may be only **42 MB**, it can consume hundreds of megabytes—or more—of RAM and GPU memory during processing.
 >
 > If FibroTrack closes while analyzing a large image, downsample the image or divide it into smaller tiles before trying again.
 >
